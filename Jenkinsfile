@@ -11,8 +11,8 @@ pipeline {
                 script {
                     dir("${env.cloneDir}") { // Use the dynamic environment variable
                         git branch: 'main',
-                           credentialsId: 'your-github-credentials-id',
-                           url: 'https://github.com/username/repository.git'
+                           credentialsId: 'id1',
+                           url: 'https://github.com/Varun-Pfizer/devops_test.git'
                     }
                 }
             }
