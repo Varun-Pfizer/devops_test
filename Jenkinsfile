@@ -3,7 +3,7 @@ pipeline {
     agent any
     environment {
         // Define a variable to store the clone directory based on branch name
-        cloneDir = "C:/Users/BHANDV04\OneDrive - Pfizer/Downloads/${env.BRANCH_NAME}"
+        cloneDir = "C:/Users/BHANDV04/OneDrive - Pfizer/Downloads/${env.BRANCH_NAME}"
     }
     stages {
         stage('Clone Github Project') {
