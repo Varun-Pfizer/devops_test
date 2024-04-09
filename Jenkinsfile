@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script {
                     dir("${env.cloneDir}") { // Use the dynamic environment variable
-                        git branch: 'main',
+                        git branch: ${env.BRANCH_NAME},
                            credentialsId: 'id1',
                            url: 'https://github.com/Varun-Pfizer/devops_test.git'
                     }
